@@ -1,0 +1,18 @@
+# 02 · 晶圆厂建筑布局、洁净室与厂务系统 (`02_fab_architecture_and_facilities`)
+
+> 晶圆厂不只是“摆满机器的大房间”，而是一座耗资百亿美元、全年 365 天 × 24 小时稳定运行的**超洁净精密化工厂与微振动隔离体**。
+
+## 目录内容
+- `01_fab_layout_and_cleanroom/` —— 三层垂直建筑结构、Bay & Chase 布局、ISO 洁净度、FFU、AMC 与抗微振
+- `02_upw_gases_and_chemicals/` —— 超纯水（UPW）、大宗/特种气体、中央供液系统（CDS/SDS）
+- `03_hvac_power_vacuum_cooling/` —— 洁净空调（MAU/RCU）、尾气洗涤（Scrubber）、电力保障、真空与 PCW 冷却水
+- `04_ehs_and_cleanroom_protocols/` —— EHS 安全法规、危化品防护与无尘室行为规范
+
+## 学习 Checklist
+- [x] [12 寸晶圆厂垂直分层与 Bay-Chase 空间布局](./01_fab_layout_and_cleanroom/notes/01_cleanroom_3tier_and_bay_chase.md)
+- [x] [超纯水（UPW）、特种气体与中央供液（CDS）基础](./02_upw_gases_and_chemicals/notes/01_upw_and_cds_overview.md)
+- [x] 厂务动力与真空减排系统三部曲：
+  - [x] [洁净空调 HVAC、温湿度精准控制与工艺冷却水（PCW）](./03_hvac_power_vacuum_cooling/notes/01_hvac_mau_rcu_and_pcw.md)
+  - [x] [Sub-Fab 真空泵系统、排气分流与尾气洗涤（Scrubber）](./03_hvac_power_vacuum_cooling/notes/02_vacuum_drypumps_and_scrubbers.md)
+  - [x] [晶圆厂供电稳定性、SEMI F47 电压暂降抑制与抗微振基座](./03_hvac_power_vacuum_cooling/notes/03_power_sag_ups_and_anti_vibration.md)
+- [x] [无尘室穿戴礼仪与晶圆厂 EHS 高危红线](./04_ehs_and_cleanroom_protocols/notes/01_cleanroom_protocol_and_ehs.md)

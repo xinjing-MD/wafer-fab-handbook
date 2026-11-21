@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0f172a; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <!-- Title -->
+  <text x="480" y="32" fill="#f8fafc" font-size="18" font-weight="bold" text-anchor="middle">化学机械平坦化（CMP）系统动力学、Preston 定律与微观碟形凹陷</text>
+  <text x="480" y="52" fill="#94a3b8" font-size="11" text-anchor="middle">Chemical Mechanical Planarization (CMP) Polishing Head, Pad Conditioning &amp; Dishing/Erosion Defects</text>
+
+  <!-- Left: CMP Tool Architecture -->
+  <g transform="translate(40, 75)">
+    <rect x="0" y="0" width="460" height="375" rx="10" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" />
+    <text x="230" y="24" fill="#22d3ee" font-size="13" font-weight="bold" text-anchor="middle">CMP 机台核心机械抛光结构 (AMAT Reflexion / 华海清科)</text>
+
+    <!-- Platen / Polishing Pad -->
+    <rect x="30" y="210" width="400" height="30" rx="4" fill="#0284c7" />
+    <text x="230" y="230" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">大型旋转抛光盘 (Platen &amp; Polyurethane Pad, 转速 ~80 RPM)</text>
+    <path d="M 50,250 A 20,20 0 0,1 90,250" fill="none" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="70" y="270" fill="#94a3b8" font-size="9" text-anchor="middle">抛光盘公转</text>
+
+    <!-- Polishing Head (Carrier) -->
+    <g transform="translate(60, 45)">
+      <rect x="0" y="0" width="180" height="50" rx="6" fill="#334155" stroke="#64748b" />
+      <text x="90" y="22" fill="#f8fafc" font-size="10" font-weight="bold" text-anchor="middle">抛光头 (Carrier Head, 自转)</text>
+      <text x="90" y="38" fill="#38bdf8" font-size="8" text-anchor="middle">多区独立气囊调压 (Zone 1~7)</text>
+
+      <!-- Retaining Ring -->
+      <rect x="0" y="50" width="15" height="40" fill="#f59e0b" />
+      <rect x="165" y="50" width="15" height="40" fill="#f59e0b" />
+      <text x="90" y="70" fill="#fef08a" font-size="8" text-anchor="middle">保持环 (Retaining Ring, 防飞片)</text>
+
+      <!-- Membrane & Wafer -->
+      <rect x="15" y="50" width="150" height="30" fill="#475569" />
+      <rect x="20" y="80" width="140" height="8" rx="2" fill="#10b981" />
+      <text x="90" y="87" fill="#ffffff" font-size="8" font-weight="bold" text-anchor="middle">300mm 晶圆 (正面朝下被磨)</text>
+    </g>
+
+    <!-- Slurry Dispense Arm -->
+    <g transform="translate(260, 90)">
+      <rect x="0" y="0" width="60" height="15" rx="3" fill="#64748b" />
+      <line x1="30" y1="15" x2="30" y2="90" stroke="#64748b" stroke-width="4" />
+      <path d="M 30,90 Q 25,100 20,110" stroke="#e0e7ff" stroke-width="2" stroke-dasharray="2,2" />
+      <text x="35" y="75" fill="#a5b4fc" font-size="8">研磨液悬臂 (Slurry Arm)</text>
+      <text x="35" y="88" fill="#cbd5e1" font-size="8">注入磨料 + 氧化剂</text>
+    </g>
+
+    <!-- Diamond Disk Conditioner -->
+    <g transform="translate(350, 110)">
+      <rect x="15" y="0" width="30" height="70" fill="#475569" />
+      <circle cx="30" cy="85" r="25" fill="#f59e0b" stroke="#d97706" />
+      <text x="30" y="88" fill="#0f172a" font-size="8" font-weight="bold" text-anchor="middle">金刚石</text>
+      <text x="30" y="98" fill="#0f172a" font-size="7" font-weight="bold" text-anchor="middle">修整盘</text>
+      <text x="30" y="125" fill="#fcd34d" font-size="8" text-anchor="middle">微孔再生 (防釉化)</text>
+    </g>
+
+    <!-- Preston Equation Box -->
+    <rect x="25" y="295" width="410" height="65" rx="6" fill="#0f172a" stroke="#0284c7" />
+    <text x="40" y="318" fill="#38bdf8" font-size="12" font-weight="bold">Preston 去除速率定律：MRR = Kp · P · V</text>
+    <text x="40" y="338" fill="#cbd5e1" font-size="9">• P: 气囊下压力 (Downforce) | V: 晶圆与垫相对线速度 | Kp: 化学反应与温度系数</text>
+    <text x="40" y="352" fill="#94a3b8" font-size="8">• 配合 EPD 光学/涡流在线终点检测，在磨穿金属露介质层瞬间毫秒级停机</text>
+  </g>
+
+  <!-- Right: Dishing & Erosion Microscopic Profiles -->
+  <g transform="translate(520, 75)">
+    <rect x="0" y="0" width="400" height="375" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5" />
+    <text x="200" y="24" fill="#facc15" font-size="13" font-weight="bold" text-anchor="middle">微观几何缺陷：碟形凹陷 (Dishing) 与侵蚀 (Erosion)</text>
+
+    <!-- Sub-panel 1: Dishing on wide copper lines -->
+    <g transform="translate(25, 45)">
+      <rect x="0" y="0" width="350" height="135" rx="6" fill="#0f172a" stroke="#475569" />
+      <text x="15" y="20" fill="#f87171" font-size="11" font-weight="bold">1. 宽线碟形凹陷 (Dishing in Wide Cu Lines):</text>
+
+      <!-- Profile with curved copper top -->
+      <path d="M 20,70 L 80,70 L 80,115 L 260,115 L 260,70 L 320,70" fill="none" stroke="#64748b" stroke-width="2" />
+      <path d="M 80,70 Q 170,95 260,70 L 260,115 L 80,115 Z" fill="#b45309" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="170" y="105" fill="#fef08a" font-size="10" font-weight="bold" text-anchor="middle">Cu 铜线被过度下陷磨除 (Dishing)</text>
+
+      <!-- Measure arrow -->
+      <line x1="170" y1="70" x2="170" y2="92" stroke="#ef4444" stroke-width="1.5" />
+      <text x="180" y="82" fill="#ef4444" font-size="8">下凹深度 ~数十 nm</text>
+      <text x="15" y="125" fill="#94a3b8" font-size="8">影响：金属截面积缩小导致线电阻 R 剧增，引发布线时序延迟与信号退化</text>
+    </g>
+
+    <!-- Sub-panel 2: Erosion in dense fine lines -->
+    <g transform="translate(25, 195)">
+      <rect x="0" y="0" width="350" height="155" rx="6" fill="#0f172a" stroke="#475569" />
+      <text x="15" y="20" fill="#38bdf8" font-size="11" font-weight="bold">2. 密集细线区侵蚀 (Erosion in Dense Pitch Array):</text>
+
+      <!-- Profile showing dielectric sinking -->
+      <path d="M 20,65 L 70,65 Q 90,85 100,85 L 240,85 Q 250,65 270,65 L 320,65" fill="none" stroke="#38bdf8" stroke-width="2" />
+      <text x="170" y="75" fill="#93c5fd" font-size="9" text-anchor="middle">密集阵列区介质层整体下陷 (Erosion)</text>
+
+      <!-- Dense copper lines inside eroded region -->
+      <rect x="110" y="85" width="10" height="30" fill="#f59e0b" />
+      <rect x="130" y="85" width="10" height="30" fill="#f59e0b" />
+      <rect x="150" y="85" width="10" height="30" fill="#f59e0b" />
+      <rect x="170" y="85" width="10" height="30" fill="#f59e0b" />
+      <rect x="190" y="85" width="10" height="30" fill="#f59e0b" />
+      <rect x="210" y="85" width="10" height="30" fill="#f59e0b" />
+
+      <!-- Design Rule Mitigation -->
+      <text x="15" y="132" fill="#34d399" font-size="9" font-weight="bold">设计规则（DFM）与工艺对策：</text>
+      <text x="15" y="146" fill="#cbd5e1" font-size="8">• 宽金属线开槽 (Slotting) / 自动插入 Dummy Metal 均匀图形密度</text>
+    </g>
+  </g>
+</svg>

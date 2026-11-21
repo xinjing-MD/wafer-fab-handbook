@@ -1,0 +1,35 @@
+# 大体积视频、压缩包与三维工程源文件（避免撑爆 Git 仓库，统一走网盘或 Releases 索引）
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.iso
+*.blend
+*.blend1
+*.fbx
+*.obj
+*.step
+*.stp
+*.igs
+
+# 超大 PDF / 电子书原始目录（若本地临时存放，避免误提交）
+**/raw_books/
+**/large_pdfs/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/.ropeproject

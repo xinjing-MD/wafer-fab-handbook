@@ -1,0 +1,30 @@
+# 超纯水（UPW）、特种气体与中央供液系统（CDS）
+
+- **所属模块**：`02_fab_architecture_and_facilities / 02_upw_gases_and_chemicals`
+
+## 1. 超纯水（UPW, Ultra-Pure Water）
+晶圆制造中**清洗工序占总工艺步数的 30% 以上**，一片 12 寸晶圆流片全程往往消耗数吨超纯水。
+
+- **核心指标（SEMI F63 参考等级）**：
+  - **电阻率（Resistivity）**：理论极限接近 **`18.2 MΩ·cm` @ 25°C**（意味着几乎不含任何阴阳离子）。
+  - **TOC（总有机碳）**：先进制程通常控制至 `< 1 ppb`（十亿分之一），防止晶圆表面碳残留导致硅氧化/击穿失效。
+  - **溶解氧（DO）**：超低水平（`< 1~5 ppb`），避免硅片表面形成不受控的自然氧化层或水印（Watermark）。
+  - **颗粒与细菌**：纳米级超滤（UF）后，目标颗粒度控制到 20nm 甚至更小量级。
+- **典型制备链路**：原水预处理 → 多级 RO 反渗透 → EDI 电去离子 / 混床树脂 → UV 杀菌与降 TOC（185nm/254nm）→ 脱气膜 → 终端抛光混床与超滤。
+
+---
+
+## 2. 大宗气体与特种气体（Bulk & Specialty Gases）
+
+- **大宗气体（Bulk Gases）**：高纯 $\text{N}_2$（吹扫、气浮、FOUP 充氮防氧化，用量最大）、$\text{O}_2$、$\text{Ar}$（PVD 溅射与保护气）、$\text{H}_2$（Epi/退火还原）、CDA（洁净干燥压缩空气，气动阀门驱动）。
+- **特种气体（Specialty Gases）**：按工艺直接进入反应腔室，**极度危险（易燃、自燃、剧毒、强腐蚀）**：
+  - 薄膜沉积：$\text{SiH}_4$（硅烷，遇空气自燃）、$\text{WF}_6$（六氟化钨，遇水生成剧毒 HF）、$\text{NH}_3$、$\text{N}_2\text{O}$
+  - 干法刻蚀与洗腔：$\text{CF}_4$、$\text{SF}_6$、$\text{NF}_3$、$\text{Cl}_2$、$\text{HBr}$、$\text{BCl}_3$
+  - 离子注入气源：$\text{AsH}_3$（砷化氢，剧毒）、$\text{PH}_3$（磷化氢，剧毒）、$\text{BF}_3$
+- **输送安全**：使用 **Gas Cabinet（特气柜）** + 双套管（Coaxial Tubing）负压抽风 + VMB 阀箱 + 泄漏侦测探头（GMS）。
+
+---
+
+## 3. 中央供液系统（CDS / SDS）
+- **CDS（Chemical Delivery System）**：把 $\text{HF}$、$\text{H}_2\text{O}_2$、$\text{NH}_4\text{OH}$、$\text{H}_2\text{SO}_4$、$\text{HCl}$、显影液（TMAH）及光刻胶等从厂务化学间通过高纯 PFA/PTFE 管路精准输送到洁净室机台，保证极低金属离子（ppt 级）污染。
+- **SDS（Slurry Delivery System）**：为 CMP 机台输送含磨料的研磨液，核心难点是**持续搅拌与循环防沉降、控温与大颗粒过滤（防晶圆划伤 Scratch）**。

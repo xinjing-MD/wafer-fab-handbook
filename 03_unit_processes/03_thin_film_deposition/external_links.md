@@ -1,0 +1,6 @@
+# 薄膜沉积外部资料索引 (`external_links.md`)
+
+| 类型 | 资料名称 | 来源 | 说明 | 链接 |
+| :--- | :--- | :--- | :--- | :--- |
+| 厂商资料 | Applied Materials Endura PVD / Producer CVD Briefs | AMAT | 薄膜沉积机台与腔室设计 | 官网检索 |
+| 学术综述 | *Atomic Layer Deposition: An Overview* | Steven M. George (Chem. Rev.) | ALD 经典必读综述 | 学术数据库检索 |

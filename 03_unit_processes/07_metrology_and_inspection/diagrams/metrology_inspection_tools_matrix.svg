@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0f172a; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <!-- Title -->
+  <text x="480" y="32" fill="#f8fafc" font-size="18" font-weight="bold" text-anchor="middle">晶圆制造量测（Metrology）与缺陷检测（Inspection）设备矩阵</text>
+  <text x="480" y="52" fill="#94a3b8" font-size="11" text-anchor="middle">In-line Metrology (Dimensional/Film/Overlay) vs Defect Inspection (Optical/E-beam)</text>
+
+  <!-- Left: Metrology Tools (测准不准) -->
+  <g transform="translate(40, 75)">
+    <rect x="0" y="0" width="420" height="375" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="210" y="24" fill="#38bdf8" font-size="13" font-weight="bold" text-anchor="middle">Metrology 物理尺寸与膜厚量测 (抽样点测)</text>
+
+    <!-- Tool 1: CD-SEM -->
+    <g transform="translate(15, 40)">
+      <rect x="0" y="0" width="390" height="65" rx="6" fill="#0f172a" stroke="#0284c7" />
+      <text x="15" y="20" fill="#60a5fa" font-size="11" font-weight="bold">1. CD-SEM 关键尺寸扫描电镜 (Hitachi / AMAT)</text>
+      <text x="15" y="38" fill="#cbd5e1" font-size="9">• 对象：纳米级栅长 (Lg)、接触孔直径 (Contact CD)、线边缘粗糙度 (LER)</text>
+      <text x="15" y="52" fill="#94a3b8" font-size="8">• 原理：超低能量高精度聚焦电子束扫描二次电子信号，测量亚纳米级物理宽度</text>
+    </g>
+
+    <!-- Tool 2: Overlay Metrology -->
+    <g transform="translate(15, 115)">
+      <rect x="0" y="0" width="390" height="65" rx="6" fill="#0f172a" stroke="#0284c7" />
+      <text x="15" y="20" fill="#60a5fa" font-size="11" font-weight="bold">2. Overlay 套刻对准量测仪 (KLA Archer / ASML YieldStar)</text>
+      <text x="15" y="38" fill="#cbd5e1" font-size="9">• 对象：本层电路与下层电路 X/Y 方向相对偏差 (ΔX, ΔY)</text>
+      <text x="15" y="52" fill="#94a3b8" font-size="8">• 技术：IBO (基于 Box-in-Box 图像分析) 与 DBO (衍射级光栅干涉对称度反演)</text>
+    </g>
+
+    <!-- Tool 3: Ellipsometry / OCD -->
+    <g transform="translate(15, 190)">
+      <rect x="0" y="0" width="390" height="75" rx="6" fill="#0f172a" stroke="#0284c7" />
+      <text x="15" y="20" fill="#60a5fa" font-size="11" font-weight="bold">3. 椭偏仪 (Spectroscopic Ellipsometry) 与 OCD</text>
+      <text x="15" y="38" fill="#cbd5e1" font-size="9">• 对象：纳米级超薄绝缘膜厚 (SiO2, High-k, BARC)、折射率 n / 消光系数 k</text>
+      <text x="15" y="52" fill="#cbd5e1" font-size="9">• OCD：利用周期光栅光谱模型逆向推演 FinFET 鳍高、鳍宽与侧壁倾角</text>
+      <text x="15" y="66" fill="#10b981" font-size="8">✔ 非破坏性、单次耗时秒级、高通量在线监控</text>
+    </g>
+
+    <!-- Bottom summary -->
+    <rect x="15" y="275" width="390" height="85" rx="6" fill="#0f172a" stroke="#475569" />
+    <text x="25" y="295" fill="#38bdf8" font-size="10" font-weight="bold">SPC 闭环与 APC 反馈联动：</text>
+    <text x="25" y="315" fill="#cbd5e1" font-size="9">• CD-SEM 数据上传 MES，触发 SPC 控制图计算 Cp/Cpk</text>
+    <text x="25" y="332" fill="#cbd5e1" font-size="9">• Overlay 数据直接反馈给 Scanner 做下一批次机台工件台自动补偿</text>
+    <text x="25" y="348" fill="#94a3b8" font-size="8">• 评估准则：TMU (Total Measurement Uncertainty) 必须 &lt; 规格公差的 10%</text>
+  </g>
+
+  <!-- Right: Inspection Tools (抓坏不坏) -->
+  <g transform="translate(490, 75)">
+    <rect x="0" y="0" width="430" height="375" rx="10" fill="#1e293b" stroke="#f43f5e" stroke-width="1.5" />
+    <text x="215" y="24" fill="#fb7185" font-size="13" font-weight="bold" text-anchor="middle">Inspection 缺陷扫描与自动复检 (全片大面积)</text>
+
+    <!-- Tool 1: Brightfield / Darkfield Optical -->
+    <g transform="translate(15, 40)">
+      <rect x="0" y="0" width="400" height="90" rx="6" fill="#0f172a" stroke="#e11d48" />
+      <text x="15" y="20" fill="#fda4af" font-size="11" font-weight="bold">1. 有图形光学缺陷检测仪 (KLA 29xx / 39xx 系列)</text>
+      <text x="15" y="38" fill="#cbd5e1" font-size="9"><tspan fill="#f59e0b" font-weight="bold">• 明场 (Brightfield BBP):</tspan> 激光等离子体宽带光，纳米级分辨率，专门检测图形短路/断线</text>
+      <text x="15" y="54" fill="#cbd5e1" font-size="9"><tspan fill="#38bdf8" font-weight="bold">• 暗场 (Darkfield):</tspan> 斜入射激光散射检测，高通量高速扫描全片，抓表面大颗粒与划伤</text>
+      <text x="15" y="72" fill="#94a3b8" font-size="8">• 对比算法：Die-to-Die (相邻芯片比对) 与 Die-to-Database (比对原始 GDSII)</text>
+    </g>
+
+    <!-- Tool 2: E-beam Inspection & Voltage Contrast -->
+    <g transform="translate(15, 140)">
+      <rect x="0" y="0" width="400" height="95" rx="6" fill="#0f172a" stroke="#e11d48" />
+      <text x="15" y="20" fill="#fda4af" font-size="11" font-weight="bold">2. 电子束缺陷检测 (EBI) 与电压衬度 (Voltage Contrast)</text>
+      <text x="15" y="38" fill="#cbd5e1" font-size="9">• 灵敏度极限：可侦测到小于 5nm 的极限缺陷</text>
+      <text x="15" y="54" fill="#cbd5e1" font-size="9">• 电压衬度 (VC) 绝招：电子束扫描时，与衬底导通的通孔与浮空未打通的通孔产生明显明暗充放电差异，专门识别隐性假通/微开路</text>
+      <text x="15" y="72" fill="#f87171" font-size="8">★ 缺点：扫描速度慢，适合研发与关键瓶颈层抽检</text>
+    </g>
+
+    <!-- Tool 3: Defect Review SEM (DR-SEM) -->
+    <g transform="translate(15, 245)">
+      <rect x="0" y="0" width="400" height="115" rx="6" fill="#0f172a" stroke="#e11d48" />
+      <text x="15" y="20" fill="#fda4af" font-size="11" font-weight="bold">3. 缺陷复检电镜 (DR-SEM) 与自动缺陷分类 (ADC)</text>
+      <text x="15" y="38" fill="#cbd5e1" font-size="9">• 光学检测输出 KLARF 坐标清单 ──&gt; DR-SEM 高倍率逐一拍照</text>
+      <text x="15" y="54" fill="#cbd5e1" font-size="9">• 深度学习 ADC 识别：将假缺陷 (Nuisance) 剔除，保留致命缺陷 (Killer Defect)</text>
+      <text x="15" y="70" fill="#cbd5e1" font-size="9">• 挂载 EDS 能谱仪：瞬间测出颗粒元素成分 (是 Al、Si 还是 F、有机碳?)</text>
+      <text x="15" y="88" fill="#10b981" font-size="8">✔ 成果直接指引设备工程师 (EE) 精准定位哪台机台的哪个腔体正在掉粉</text>
+    </g>
+  </g>
+</svg>
