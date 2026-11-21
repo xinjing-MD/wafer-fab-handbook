@@ -3,10 +3,10 @@
 ## 学习目标 Checklist
 - [x] [干法刻蚀（CCP/ICP/ALE）与湿法 RCA 清洗核心机理](./笔记/01_干法刻蚀与RCA湿法清洗机理.md)
   - 🎨 矢量机理图：[等离子体刻蚀反应机理（ICP/CCP）与湿法 RCA 清洗技术](./图解/等离子体刻蚀与RCA清洗机理图.svg)
+- [x] [高深宽比刻蚀（HARC，3D NAND / DRAM）与 Bosch 深硅刻蚀](./笔记/02_高深宽比刻蚀HARC与Bosch深硅.md)
+- [x] [原子层刻蚀（ALE）与自对准接触孔（SAC）工艺难点](./笔记/03_原子层刻蚀ALE与自对准接触孔SAC.md)
+- [x] [单片旋转清洗（Single Wafer Clean）vs 槽式清洗（Wet Bench）](./笔记/04_单片旋转清洗与槽式清洗对比.md)
 - [x] 经典论文与技术白皮书：[刻蚀领域经典论文（Coburn&Winters 奠基作/ALE 综述等）精读指南](./论文与白皮书/README.md)
-- [ ] 高深宽比刻蚀（HARC，3D NAND / DRAM）与 Bosch 深硅刻蚀
-- [ ] 原子层刻蚀（ALE）与自对准接触孔（SAC）工艺难点
-- [ ] 单片旋转清洗（Single Wafer Clean）vs 槽式清洗（Wet Bench）
 
 ## 资料索引
 - 笔记：`./笔记/`

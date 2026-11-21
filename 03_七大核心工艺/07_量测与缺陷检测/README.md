@@ -3,9 +3,9 @@
 ## 学习目标 Checklist
 - [x] [产线量测（Metrology）与缺陷检测（Inspection）全景图](./笔记/01_产线量测Metrology与缺陷检测.md)
   - 🎨 矢量工具矩阵图：[晶圆制造量测与缺陷检测设备矩阵（CD-SEM/Overlay/OCD/明暗场/电压衬度）](./图解/产线量测与缺陷检测设备矩阵图.svg)
+- [x] [明场（Brightfield）vs 暗场（Darkfield）检测与电子束复检（DR-SEM）](./笔记/02_明暗场光学检测与电子束复检.md)
+- [x] [光学关键尺寸量测（OCD / Scatterometry）与椭偏反演原理](./笔记/03_光学关键尺寸量测OCD与椭偏反演.md)
 - [x] 经典论文与技术白皮书：[量测与检测经典论文（RCWA 散射模型/EUV 随机缺陷等）精读指南](./论文与白皮书/README.md)
-- [ ] 明场（Brightfield）vs 暗场（Darkfield）光学散射检测与电子束（E-Beam）复检
-- [ ] 光学关键尺寸量测（OCD / Scatterometry）模型反演原理
 
 ## 资料索引
 - 笔记：`./笔记/`
