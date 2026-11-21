@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%" style="background:#0f172a; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <!-- Title -->
+  <text x="480" y="30" fill="#f8fafc" font-size="18" font-weight="bold" text-anchor="middle">12 寸先进晶圆厂四层垂直剖面与 Bay-Chase 空间架构</text>
+  <text x="480" y="50" fill="#94a3b8" font-size="11" text-anchor="middle">300mm Wafer Fab Vertical Sandwich Cross-Section &amp; Clean Bay / Service Chase Separation</text>
+
+  <!-- Left: Vertical 4-Layer Cross Section -->
+  <g transform="translate(35, 70)">
+    <rect x="0" y="0" width="520" height="425" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="260" y="22" fill="#38bdf8" font-size="13" font-weight="bold" text-anchor="middle">垂直四层“三明治”抗微振建筑剖面 (1:1 工程标高)</text>
+
+    <!-- Layer 1: Plenum / Ceiling Return -->
+    <rect x="20" y="38" width="480" height="48" rx="4" fill="#0f172a" stroke="#64748b" />
+    <text x="32" y="57" fill="#bae6fd" font-size="11" font-weight="bold">1. 回风静压箱层 (Plenum / MAU &amp; DCC 干盘管)</text>
+    <text x="32" y="75" fill="#94a3b8" font-size="9">正压风道 + MAU 化学除碱滤网 (控 NH3 &lt; 1 ppb) + 恒温 21.0±0.1°C</text>
+
+    <!-- FFU Ceiling Bar -->
+    <rect x="20" y="88" width="480" height="16" fill="#0284c7" />
+    <text x="260" y="99" fill="#ffffff" font-size="9" font-weight="bold" text-anchor="middle">FFU / ULPA 超高效过滤吊顶 (1200×600mm 龙骨 | 垂直单向层流 0.35~0.45 m/s ↓↓↓)</text>
+
+    <!-- Layer 2: Cleanroom (Clean Bay + Bulkhead + Service Chase) -->
+    <rect x="20" y="106" width="480" height="150" fill="#0f172a" stroke="#38bdf8" />
+    <!-- Clean Bay -->
+    <rect x="25" y="112" width="275" height="138" fill="#172554" opacity="0.55" />
+    <text x="160" y="130" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="middle">Clean Bay 洁净操作走廊 (ISO 1~3)</text>
+    <!-- OHT Overhead Rail -->
+    <rect x="40" y="140" width="245" height="10" rx="2" fill="#f59e0b" />
+    <rect x="125" y="150" width="60" height="22" rx="3" fill="#fbbf24" />
+    <text x="155" y="164" fill="#0f172a" font-size="9" font-weight="bold" text-anchor="middle">OHT 天车</text>
+    <line x1="155" y1="172" x2="155" y2="205" stroke="#fde047" stroke-width="1.5" stroke-dasharray="3,2" />
+    <text x="218" y="164" fill="#fde047" font-size="8">Z=3.5m 轨高</text>
+    <!-- Load Port & EFEM -->
+    <rect x="135" y="206" width="45" height="44" fill="#334155" stroke="#94a3b8" />
+    <rect x="143" y="196" width="26" height="14" rx="2" fill="#92400e" stroke="#f59e0b" />
+    <text x="156" y="206" fill="#fef08a" font-size="7" text-anchor="middle">FOUP</text>
+    <text x="90" y="224" fill="#cbd5e1" font-size="8" text-anchor="middle">Load Port</text>
+    <text x="90" y="236" fill="#34d399" font-size="8" text-anchor="middle">Z=900mm 基准</text>
+    <rect x="180" y="185" width="115" height="65" fill="#475569" stroke="#cbd5e1" />
+    <text x="237" y="220" fill="#ffffff" font-size="9" font-weight="bold" text-anchor="middle">EFEM 前端模块</text>
+
+    <!-- Bulkhead Wall -->
+    <rect x="298" y="106" width="8" height="150" fill="#94a3b8" />
+    <text x="302" y="122" fill="#fef08a" font-size="8" text-anchor="middle">隔墙</text>
+
+    <!-- Service Chase -->
+    <rect x="308" y="112" width="187" height="138" fill="#1e293b" />
+    <text x="401" y="130" fill="#f97316" font-size="11" font-weight="bold" text-anchor="middle">Service Chase 维护灰区 (ISO 5)</text>
+    <rect x="320" y="175" width="145" height="75" rx="4" fill="#334155" stroke="#f97316" />
+    <text x="392" y="210" fill="#fed7aa" font-size="10" font-weight="bold" text-anchor="middle">工艺反应腔体 (VTM / PM)</text>
+    <text x="392" y="228" fill="#cbd5e1" font-size="8" text-anchor="middle">后廊拆腔维修，零干扰洁净走廊</text>
+
+    <!-- Raised Perforated Floor -->
+    <rect x="20" y="256" width="480" height="10" fill="#cbd5e1" stroke="#475569" stroke-dasharray="6,3" />
+    <text x="260" y="264" fill="#0f172a" font-size="7" font-weight="bold" text-anchor="middle">600×600mm 架高穿孔铝地板 (净高 4.2~4.8m | 气流下穿 ↓↓↓)</text>
+
+    <!-- Layer 3: Waffle Slab -->
+    <rect x="20" y="268" width="480" height="32" fill="#475569" stroke="#94a3b8" stroke-dasharray="18,6" />
+    <text x="260" y="288" fill="#f8fafc" font-size="10" font-weight="bold" text-anchor="middle">3. Waffle Slab 混凝土华夫板结构层 (厚 600~900mm | 高阻尼抗微振 + 落风孔)</text>
+
+    <!-- Layer 4: Sub-Fab -->
+    <rect x="20" y="302" width="480" height="68" rx="4" fill="#0f172a" stroke="#eab308" />
+    <text x="32" y="319" fill="#facc15" font-size="10" font-weight="bold">4. Sub-Fab 辅助设备层 (净高 4.5~6.0m)</text>
+    <rect x="35" y="328" width="130" height="34" rx="4" fill="#1e293b" stroke="#64748b" />
+    <text x="100" y="349" fill="#e2e8f0" font-size="9" text-anchor="middle">干式真空泵 (Dry Pump)</text>
+    <rect x="180" y="328" width="145" height="34" rx="4" fill="#1e293b" stroke="#64748b" />
+    <text x="252" y="349" fill="#e2e8f0" font-size="9" text-anchor="middle">Burn-Wet 尾气洗涤塔</text>
+    <rect x="340" y="328" width="145" height="34" rx="4" fill="#1e293b" stroke="#64748b" />
+    <text x="412" y="349" fill="#e2e8f0" font-size="9" text-anchor="middle">Precision Chiller / RF 电源</text>
+
+    <!-- Layer 5: Basement Utility -->
+    <rect x="20" y="374" width="480" height="40" rx="4" fill="#020617" stroke="#475569" />
+    <text x="32" y="392" fill="#94a3b8" font-size="10" font-weight="bold">5. Basement 底层公用动力与抗震桩基 (独立光刻沉箱基座 VC-E/F)</text>
+    <text x="32" y="407" fill="#64748b" font-size="8">回风竖井 / UPW 主管网 / PCW 冷水主管 / 6 大分流排气管总管 / 废液回收</text>
+  </g>
+
+  <!-- Right: Facility Key Specs & Exhaust Matrix -->
+  <g transform="translate(575, 70)">
+    <rect x="0" y="0" width="350" height="425" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <text x="175" y="22" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle">厂务关键指标与六分流排气管网</text>
+
+    <g transform="translate(15, 38)">
+      <rect x="0" y="0" width="320" height="125" rx="6" fill="#0f172a" stroke="#334155" />
+      <text x="12" y="20" fill="#38bdf8" font-size="10" font-weight="bold">压差梯度与环境控制红线</text>
+      <text x="12" y="38" fill="#cbd5e1" font-size="9">• 正压梯级：Clean Bay (+15 Pa) &gt; Chase (+5 Pa) &gt; 室外</text>
+      <text x="12" y="55" fill="#cbd5e1" font-size="9">• 超纯水 UPW：18.2 MΩ·cm @ 25°C | TOC &lt; 1 ppb</text>
+      <text x="12" y="72" fill="#cbd5e1" font-size="9">• 光刻环境：589nm 琥珀黄光 | 振动 VC-E/F (≤ 3.1μm/s)</text>
+      <text x="12" y="89" fill="#cbd5e1" font-size="9">• 电网防跌落：遵循 SEMI F47（50% 电压须挺住 200ms）</text>
+      <text x="12" y="106" fill="#f87171" font-size="9">• 湿化学品标准：SEMI G4/G5（金属杂质 &lt; 10 ppt）</text>
+    </g>
+
+    <g transform="translate(15, 175)">
+      <rect x="0" y="0" width="320" height="235" rx="6" fill="#0f172a" stroke="#334155" />
+      <text x="12" y="22" fill="#facc15" font-size="10" font-weight="bold">严禁混流的六路排气与处理终端 (Exhaust)</text>
+      <text x="12" y="45" fill="#f87171" font-size="9">1. PYR 自燃排气 (SiH4/H2) ──► 本地燃烧水洗 Scrubber</text>
+      <text x="12" y="70" fill="#fb923c" font-size="9">2. TOX 剧毒排气 (AsH3/PH3) ──► 干式吸附柱 Dry Bed</text>
+      <text x="12" y="95" fill="#facc15" font-size="9">3. ACID 酸性排气 (HF/HCl) ──► 中央碱液喷淋塔</text>
+      <text x="12" y="120" fill="#34d399" font-size="9">4. ALK 碱性排气 (NH3/NH4OH) ──► 中央酸液中和塔</text>
+      <text x="12" y="145" fill="#38bdf8" font-size="9">5. VOC 有机溶剂 (PGMEA/IPA) ──► 沸石转轮 + RTO 焚烧</text>
+      <text x="12" y="170" fill="#cbd5e1" font-size="9">6. HEAT 高温洁净排气 ──► 热能回收后高空排放</text>
+      <line x1="12" y1="186" x2="308" y2="186" stroke="#334155" />
+      <text x="12" y="205" fill="#94a3b8" font-size="8">★ 真空排气管全程包裹 120~150°C 加热套，防止氯化铵/氟硅</text>
+      <text x="12" y="220" fill="#94a3b8" font-size="8">  酸铵气体副产物降温凝华结晶，瞬间抱死干泵转子。</text>
+    </g>
+  </g>
+</svg>

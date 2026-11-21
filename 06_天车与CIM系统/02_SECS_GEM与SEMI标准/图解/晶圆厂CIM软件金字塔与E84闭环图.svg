@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0f172a; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <!-- Title -->
+  <text x="480" y="30" fill="#f8fafc" font-size="18" font-weight="bold" text-anchor="middle">全自动 12 寸晶圆厂 CIM 软件金字塔与 SEMI E84 / SECS 通信闭环</text>
+  <text x="480" y="50" fill="#94a3b8" font-size="11" text-anchor="middle">Fab CIM Architecture (ERP / MES / RTD / MCS / EAP / FDC / APC) &amp; GEM300 Handoff Loop</text>
+
+  <!-- Left: CIM Pyramid & Data Flows -->
+  <g transform="translate(30, 75)">
+    <rect x="0" y="0" width="490" height="375" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="245" y="24" fill="#38bdf8" font-size="13" font-weight="bold" text-anchor="middle">晶圆厂智能制造工业软件金字塔</text>
+
+    <!-- ERP -->
+    <rect x="115" y="42" width="260" height="36" rx="5" fill="#0f172a" stroke="#64748b" />
+    <text x="245" y="64" fill="#e2e8f0" font-size="11" font-weight="bold" text-anchor="middle">ERP 企业资源计划 (客户订单 / 投料计划)</text>
+    <line x1="245" y1="78" x2="245" y2="92" stroke="#38bdf8" stroke-width="2" />
+
+    <!-- MES -->
+    <rect x="65" y="92" width="360" height="44" rx="6" fill="#0284c7" />
+    <text x="245" y="112" fill="#ffffff" font-size="12" font-weight="bold" text-anchor="middle">MES 制造执行系统 (工厂中枢大脑)</text>
+    <text x="245" y="128" fill="#bae6fd" font-size="9" text-anchor="middle">Run Card 工艺路线 / Hold 扣留防呆 / Q-Time 监控 / 账务追溯</text>
+
+    <!-- RTD & MCS -->
+    <line x1="150" y1="136" x2="150" y2="156" stroke="#38bdf8" stroke-width="2" />
+    <line x1="340" y1="136" x2="340" y2="156" stroke="#38bdf8" stroke-width="2" />
+
+    <rect x="30" y="156" width="205" height="58" rx="6" fill="#0f172a" stroke="#f59e0b" />
+    <text x="132" y="177" fill="#facc15" font-size="11" font-weight="bold" text-anchor="middle">RTD 实时派工调度</text>
+    <text x="132" y="193" fill="#cbd5e1" font-size="8" text-anchor="middle">权衡 Hot Lot / Q-Time / 同配方合批</text>
+    <text x="132" y="206" fill="#94a3b8" font-size="8" text-anchor="middle">秒级决定下一批料送哪台机台</text>
+
+    <rect x="255" y="156" width="205" height="58" rx="6" fill="#0f172a" stroke="#10b981" />
+    <text x="357" y="177" fill="#34d399" font-size="11" font-weight="bold" text-anchor="middle">APC / FDC 先进控制与侦测</text>
+    <text x="357" y="193" fill="#cbd5e1" font-size="8" text-anchor="middle">APC: 根据量测反馈微调下批参数</text>
+    <text x="357" y="206" fill="#94a3b8" font-size="8" text-anchor="middle">FDC: 毫秒传感器 Trace 抓异常</text>
+
+    <!-- MCS & EAP -->
+    <line x1="132" y1="214" x2="132" y2="232" stroke="#f59e0b" stroke-width="2" />
+    <line x1="357" y1="214" x2="357" y2="232" stroke="#10b981" stroke-width="2" />
+
+    <rect x="30" y="232" width="205" height="54" rx="6" fill="#78350f" stroke="#f59e0b" />
+    <text x="132" y="253" fill="#fef08a" font-size="11" font-weight="bold" text-anchor="middle">MCS 物料控制系统</text>
+    <text x="132" y="270" fill="#fed7aa" font-size="8" text-anchor="middle">指挥 OHT 天车、Stocker、OHB 防碰撞</text>
+
+    <rect x="255" y="232" width="205" height="54" rx="6" fill="#064e3b" stroke="#10b981" />
+    <text x="357" y="253" fill="#6ee7b7" font-size="11" font-weight="bold" text-anchor="middle">EAP 设备自动化程序</text>
+    <text x="357" y="270" fill="#a7f3d0" font-size="8" text-anchor="middle">HSMS/SECS-II 协议下发 PP-SELECT/START</text>
+
+    <!-- Physical Tool & OHT -->
+    <rect x="30" y="305" width="430" height="52" rx="6" fill="#0f172a" stroke="#c084fc" stroke-width="1.5" />
+    <text x="245" y="327" fill="#e9d5ff" font-size="11" font-weight="bold" text-anchor="middle">物理制造层：OHT 天车 ←[SEMI E84 8路光耦握手]→ 机台 Load Port / EFEM / PM</text>
+    <text x="245" y="344" fill="#94a3b8" font-size="8" text-anchor="middle">支持 GEM300 (E87 载具管理 / E90 单片硅片追踪 / E40 &amp; E94 作业控制 / E10 设备六态)</text>
+  </g>
+
+  <!-- Right: SEMI E84 8-Line Timing + SECS-II Commands -->
+  <g transform="translate(540, 75)">
+    <rect x="0" y="0" width="390" height="375" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" />
+    <text x="195" y="24" fill="#c084fc" font-size="13" font-weight="bold" text-anchor="middle">SEMI E84 交接时序与 SECS-II 核心报文</text>
+
+    <!-- E84 Timing Sequence -->
+    <g transform="translate(15, 42)">
+      <rect x="0" y="0" width="360" height="175" rx="6" fill="#0f172a" stroke="#475569" />
+      <text x="12" y="20" fill="#facc15" font-size="10" font-weight="bold">1. OHT 天车 ↔ Load Port 8路光耦并行信号 (E84 Load):</text>
+      <text x="12" y="40" fill="#38bdf8" font-size="9">Step 1: OHT 到达正上方 → 置位 VALID=1, CS_0=1</text>
+      <text x="12" y="57" fill="#34d399" font-size="9">Step 2: 机台确认空闲可接料 → 回复 L_REQ=1 (请求上料)</text>
+      <text x="12" y="74" fill="#38bdf8" font-size="9">Step 3: OHT 发出转移请求 → 置位 TR_REQ=1</text>
+      <text x="12" y="91" fill="#34d399" font-size="9">Step 4: 机台光幕互锁安全 → 回复 READY=1</text>
+      <text x="12" y="108" fill="#38bdf8" font-size="9">Step 5: OHT 放绳降落 FOUP → BUSY=1 (放入瞬间 L_REQ 归 0)</text>
+      <text x="12" y="125" fill="#38bdf8" font-size="9">Step 6: OHT 收起机械爪 → 置位 COMPT=1 通知完成</text>
+      <text x="12" y="142" fill="#94a3b8" font-size="8">Step 7: 双方依次清零全部信号，防止天车未离位机台就开夹爪撞机!</text>
+      <text x="12" y="160" fill="#f87171" font-size="8">★ 超时 TP1~TP5 任意阶段超时即触发 E84 Alarm 急停保护</text>
+    </g>
+
+    <!-- SECS-II Messages -->
+    <g transform="translate(15, 228)">
+      <rect x="0" y="0" width="360" height="132" rx="6" fill="#0f172a" stroke="#475569" />
+      <text x="12" y="20" fill="#34d399" font-size="10" font-weight="bold">2. EAP ↔ 机台常用 SECS-II (SxFy) 核心报文:</text>
+      <text x="12" y="40" fill="#cbd5e1" font-size="9">• S1F1 / S1F2 : Are You There? (心跳在线探测)</text>
+      <text x="12" y="57" fill="#cbd5e1" font-size="9">• S1F13 / S1F14 : Establish Communications (建立会话)</text>
+      <text x="12" y="74" fill="#cbd5e1" font-size="9">• S2F41 / S2F42 : Host Command (远程选中配方 PP-SELECT)</text>
+      <text x="12" y="91" fill="#cbd5e1" font-size="9">• S6F11 / S6F12 : Event Report (上报 SlotMap / 完工事件)</text>
+      <text x="12" y="108" fill="#cbd5e1" font-size="9">• S5F1 / S5F2 : Alarm Report (机台报警实时上送并扣批)</text>
+    </g>
+  </g>
+</svg>

@@ -9,7 +9,7 @@
 | 资料名称 | 核心定位与内容密度 | 直达阅读 |
 | :--- | :--- | :--- |
 | **六大经典教科书逐章精读导览** | 涵盖 Van Zant、Quirk & Serda、肖宏、Plummer/Deal/Griffin、May & Spanos、Chris Mack 六大经典书逐章对照，以及免费在线教材与名校公开课直链 | [01_六大经典教科书逐章导读.md](./01_六大经典教科书逐章导读.md) |
-| **核心工艺工程计算习题集（16 题详尽解析）** | 覆盖 Scheil 偏析、SFQR 与景深、EOT 串联电容、亚阈值摆幅漏电、ArFi/SAQP/EUV $k_1$、Deal-Grove 氧化、Fick 扩散、双电荷注入、Stoney 应力、Preston 抛光、四大良率与 Chiplet 拆分、$C_p/C_{pk}$、EUV 机台 Sizing | [02_晶圆厂核心工艺工程计算习题集与解析.md](./02_晶圆厂核心工艺工程计算习题集与解析.md) |
+| **核心工艺工程计算习题集（24 题详尽解析）** | 覆盖 Scheil 偏析、SFQR 与景深、EOT 串联电容、亚阈值摆幅、ArFi/SAQP/EUV $k_1$、Deal-Grove、Fick 扩散、双电荷注入、Stoney 应力、Preston 抛光、四大良率与 Chiplet、$C_p/C_{pk}$、EUV Sizing、法拉第 Cu 电镀、洁净室 FFU ACH、CMP 过抛 TaN 损耗、Double-EWMA APC 手算、Kingman/Little 运作曲线、EPE 预算、卡方腔室共因与 SiC BFOM | [02_晶圆厂核心工艺工程计算习题集与解析.md](./02_晶圆厂核心工艺工程计算习题集与解析.md) |
 | **12 寸 CMOS 电子流转卡实战范本（48 步）** | 还原 28nm HKMG Gate-Last 从 300mm 硅片投片到 WAT/CP 的 48 步完整工艺串联（含机台、Recipe 温窗、量测卡控与 Q-Time 死线） | [03_12寸逻辑晶圆厂CMOS_RunSheet实战范本.md](./03_12寸逻辑晶圆厂CMOS_RunSheet实战范本.md) |
 | **晶圆厂一线异常排错实战案例集（8 大典型案例）** | T-top 氨气毒化、掩模版周期性死点、Rule 4 双腔失配、CMP 边缘磨穿、STI 双驼峰、ECP 添加剂失衡、3D NAND EBI 亮斑与腔体剥落 | [04_晶圆厂一线异常排错实战案例集.md](./04_晶圆厂一线异常排错实战案例集.md) |
 

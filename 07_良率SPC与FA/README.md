@@ -11,3 +11,4 @@
 - [x] [良率数学模型对比：Poisson / Murphy / Seeds / 负二项模型](./01_良率模型与缺陷密度/笔记/01_良率层级与四大数学模型对比.md)
 - [x] [SPC 过程能力指数（Cp/Cpk）与西方电气判异准则](./02_SPC控制与FDC诊断/笔记/01_SPC过程能力Cp_Cpk与判异规则.md)
 - [x] [WAT、CP Wafer Map 失效特征与 FA 分析方法论](./03_WAT_CP与失效分析FA/笔记/01_WAT_CP晶圆分布图与失效分析FA.md)
+  - 🎨 矢量诊断图：[CP Wafer Map 四大失效图谱与失效分析 EFA→PFA 定位路径图](./03_WAT_CP与失效分析FA/图解/WaferMap四大失效图谱与FA定位路径图.svg)

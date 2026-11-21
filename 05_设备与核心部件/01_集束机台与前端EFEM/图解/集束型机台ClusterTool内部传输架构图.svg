@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0f172a; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <!-- Title -->
+  <text x="480" y="30" fill="#f8fafc" font-size="18" font-weight="bold" text-anchor="middle">集束型设备（Cluster Tool）内部传片架构与真空传输路径</text>
+  <text x="480" y="50" fill="#94a3b8" font-size="11" text-anchor="middle">Load Port (E15.1) → EFEM Atmospheric Robot → Load Lock → VTM Vacuum Robot → Process Modules</text>
+
+  <!-- Section 1: Load Port (Atmospheric) -->
+  <g transform="translate(30, 120)">
+    <rect x="0" y="0" width="145" height="230" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="72" y="22" fill="#facc15" font-size="12" font-weight="bold" text-anchor="middle">1. Load Port</text>
+    <text x="72" y="38" fill="#94a3b8" font-size="9" text-anchor="middle">SEMI E15.1 / E84 接口</text>
+    <!-- FOUP -->
+    <rect x="30" y="65" width="85" height="90" rx="6" fill="#78350f" stroke="#f59e0b" stroke-width="2" />
+    <line x1="40" y1="85" x2="105" y2="85" stroke="#fde047" stroke-width="1.5" />
+    <line x1="40" y1="95" x2="105" y2="95" stroke="#fde047" stroke-width="1.5" />
+    <line x1="40" y1="105" x2="105" y2="105" stroke="#fde047" stroke-width="1.5" />
+    <text x="72" y="130" fill="#fef08a" font-size="10" font-weight="bold" text-anchor="middle">25片 FOUP</text>
+    <text x="72" y="145" fill="#fed7aa" font-size="8" text-anchor="middle">10mm Pitch</text>
+    <text x="72" y="178" fill="#34d399" font-size="9" text-anchor="middle">FIMS 门板下沉开盖</text>
+    <text x="72" y="196" fill="#cbd5e1" font-size="8" text-anchor="middle">底盘三销定位 Z=900mm</text>
+    <text x="72" y="212" fill="#94a3b8" font-size="8" text-anchor="middle">RFID 读写与氮气吹扫</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="175" y1="235" x2="205" y2="235" stroke="#38bdf8" stroke-width="3" />
+
+  <!-- Section 2: EFEM (Mini-environment ISO 1) -->
+  <g transform="translate(205, 100)">
+    <rect x="0" y="0" width="185" height="270" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="92" y="22" fill="#38bdf8" font-size="12" font-weight="bold" text-anchor="middle">2. EFEM 大气前端</text>
+    <text x="92" y="38" fill="#94a3b8" font-size="9" text-anchor="middle">顶置 FFU 维持 ISO 1 微环境</text>
+
+    <!-- Atmospheric Dual SCARA Robot -->
+    <circle cx="92" cy="135" r="38" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <text x="92" y="132" fill="#e0f2fe" font-size="10" font-weight="bold" text-anchor="middle">双臂 SCARA</text>
+    <text x="92" y="146" fill="#38bdf8" font-size="8" text-anchor="middle">大气机械手</text>
+    <!-- Pre-Aligner -->
+    <rect x="20" y="195" width="70" height="45" rx="4" fill="#0f172a" stroke="#10b981" />
+    <text x="55" y="214" fill="#34d399" font-size="9" font-weight="bold" text-anchor="middle">Pre-aligner</text>
+    <text x="55" y="229" fill="#94a3b8" font-size="7" text-anchor="middle">光学寻找 Notch</text>
+    <!-- OCR + Mapping -->
+    <rect x="100" y="195" width="70" height="45" rx="4" fill="#0f172a" stroke="#f59e0b" />
+    <text x="135" y="214" fill="#fde047" font-size="9" font-weight="bold" text-anchor="middle">OCR / Mapping</text>
+    <text x="135" y="229" fill="#94a3b8" font-size="7" text-anchor="middle">防插斜片 Cross-slot</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="390" y1="235" x2="420" y2="235" stroke="#38bdf8" stroke-width="3" />
+
+  <!-- Section 3: Load Lock (Vacuum Buffer) -->
+  <g transform="translate(420, 145)">
+    <rect x="0" y="0" width="115" height="180" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" />
+    <text x="57" y="24" fill="#c084fc" font-size="11" font-weight="bold" text-anchor="middle">3. Load Lock</text>
+    <text x="57" y="40" fill="#94a3b8" font-size="8" text-anchor="middle">气锁过渡缓冲舱</text>
+    <rect x="15" y="55" width="85" height="45" rx="4" fill="#0f172a" stroke="#c084fc" />
+    <text x="57" y="75" fill="#e9d5ff" font-size="9" text-anchor="middle">LL-A (进片抽真空)</text>
+    <text x="57" y="90" fill="#94a3b8" font-size="7" text-anchor="middle">760 → 0.1 Torr</text>
+    <rect x="15" y="110" width="85" height="45" rx="4" fill="#0f172a" stroke="#c084fc" />
+    <text x="57" y="130" fill="#e9d5ff" font-size="9" text-anchor="middle">LL-B (出片破真空)</text>
+    <text x="57" y="145" fill="#94a3b8" font-size="7" text-anchor="middle">高纯 N2 缓充防扬尘</text>
+  </g>
+
+  <!-- Slit Valve + VTM + PMs -->
+  <g transform="translate(565, 75)">
+    <rect x="0" y="0" width="365" height="370" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <text x="182" y="24" fill="#34d399" font-size="13" font-weight="bold" text-anchor="middle">4. 高真空中心传输腔 (VTM) 与 6 个反应腔 (PM)</text>
+
+    <!-- Central Hexagon VTM -->
+    <polygon points="182,115 245,150 245,220 182,255 119,220 119,150" fill="#0f172a" stroke="#10b981" stroke-width="2.5" />
+    <text x="182" y="178" fill="#6ee7b7" font-size="11" font-weight="bold" text-anchor="middle">VTM 真空传输腔</text>
+    <text x="182" y="195" fill="#cbd5e1" font-size="9" text-anchor="middle">磁流体密封蛙腿机械手</text>
+    <text x="182" y="210" fill="#94a3b8" font-size="8" text-anchor="middle">真空度 10⁻⁶ ~ 10⁻⁸ Torr</text>
+
+    <!-- Slit valve connector from LL -->
+    <line x1="-30" y1="160" x2="119" y2="185" stroke="#10b981" stroke-width="3" />
+    <rect x="25" y="158" width="52" height="22" rx="3" fill="#064e3b" stroke="#10b981" />
+    <text x="51" y="172" fill="#a7f3d0" font-size="8" text-anchor="middle">Slit Valve</text>
+
+    <!-- PM1 ~ PM4 Star Chambers -->
+    <rect x="132" y="42" width="100" height="55" rx="6" fill="#0f172a" stroke="#f43f5e" />
+    <text x="182" y="65" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">PM1 (工艺腔)</text>
+    <text x="182" y="82" fill="#94a3b8" font-size="8" text-anchor="middle">RF + ESC + MFC + TMP</text>
+
+    <rect x="258" y="105" width="92" height="55" rx="6" fill="#0f172a" stroke="#f43f5e" />
+    <text x="304" y="128" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">PM2</text>
+    <text x="304" y="145" fill="#94a3b8" font-size="8" text-anchor="middle">独立抽真空/温控</text>
+
+    <rect x="258" y="205" width="92" height="55" rx="6" fill="#0f172a" stroke="#f43f5e" />
+    <text x="304" y="228" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">PM3</text>
+    <text x="304" y="245" fill="#94a3b8" font-size="8" text-anchor="middle">并联冗余提产能</text>
+
+    <rect x="132" y="275" width="100" height="55" rx="6" fill="#0f172a" stroke="#f43f5e" />
+    <text x="182" y="298" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">PM4 (后钝化/剥胶)</text>
+    <text x="182" y="315" fill="#94a3b8" font-size="8" text-anchor="middle">全真空串联零氧化</text>
+
+    <text x="182" y="352" fill="#fde047" font-size="8" text-anchor="middle">★ 优势：不破真空连续多腔加工 + 单腔 PM 保养时其余腔室照常生产</text>
+  </g>
+</svg>

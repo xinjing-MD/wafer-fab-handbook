@@ -10,4 +10,5 @@
 ## 学习 Checklist
 - [x] [AMHS 自动物料搬运系统：OHT 天车、Stocker 与 FOUP 规范](./01_AMHS天车与FOUP/笔记/01_AMHS天车_Stocker与FOUP规范.md)
 - [x] [SEMI 工业通信标准：SECS/GEM 与 GEM300（E84/E87/E90/E94）](./02_SECS_GEM与SEMI标准/笔记/01_SECS_GEM与GEM300标准详解.md)
+  - 🎨 矢量架构图：[晶圆厂 CIM 软件金字塔与 SEMI E84 / SECS 通信闭环图](./02_SECS_GEM与SEMI标准/图解/晶圆厂CIM软件金字塔与E84闭环图.svg)
 - [x] [晶圆厂 CIM 工业软件栈：MES / EAP / RTD / APC 全链路](./03_MES_EAP与APC软件栈/笔记/01_晶圆厂CIM软件栈_MES_EAP_APC.md)
